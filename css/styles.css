@@ -1,0 +1,78 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#principal {
+    background-color :goldenrod;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#topo {
+    background-color: darkgray;;
+    width: 100%;
+    height: 20%;
+    display: flex; /*flexbox no pai, para que os filhos se ajustem*/
+    justify-content: flex-end; /*alinha horizontamente*/
+    align-items: flex-end; /*alinha verticalmente*/
+}
+
+#topo div {
+    background-color: dimgray;
+    height: 20%;
+    width: 60%;
+}
+
+#corpo {
+    background-color: indigo;
+    width: 100%;
+    height: 70%;
+    display: flex; /*flexbox no pai, para que os filhos se ajustem*/
+}
+
+#esquerdo {
+    background-color: greenyellow;
+    width: 25%;
+    height: 100%;
+}
+
+#centro {
+    background-color: lightslategray;
+    width: 50%;
+    height: 100%;
+    display: flex; /*flexbox no pai, para que os filhos se ajustem*/
+    flex-wrap: wrap; /*alinha proporcionalmente"*/
+    justify-content: space-around; /*alinha horizontamente*/
+    align-items: center; /*alinha verticalmente*/
+}
+
+#centro div {
+    width: 40%;
+    height: 30%;
+    background-color: white;
+}
+
+#direito {
+    background-color: greenyellow;
+    width: 25%;
+    height: 100%;
+    display: flex; /*flexbox no pai, para que os filhos se ajustem*/
+    justify-content: center; /*alinha horizontamente*/
+    align-items: center; /*alinha verticalmente*/
+}
+
+#direito div {
+    background-color: yellow;
+    width: 85%;
+    height: 85%;
+}
+
+#rodape {
+    background-color: darkgray;;
+    width: 100%;
+    height: 10%;
+}
